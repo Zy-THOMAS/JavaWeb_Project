@@ -2,7 +2,7 @@ package com.ecjtu.designpatterns.demo;
 
 import java.io.Serializable;
 
-public class Person implements Serializable {
+public class Person implements PersonOperate, Serializable {
     private String name;
     private int age;
 
@@ -20,5 +20,9 @@ public class Person implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void sleep() {
+        System.out.println("我要睡觉了！！！");
     }
 }

@@ -17,5 +17,10 @@ public class DemoTest {
         }
         */
 
+        //测试代理模式
+         ProxyDemo proxyDemo = new ProxyDemo();
+         PersonOperate person = (PersonOperate) proxyDemo.getProxyInstance(new Person());
+         System.out.println(person.getClass());
+         person.sleep();
     }
 }
